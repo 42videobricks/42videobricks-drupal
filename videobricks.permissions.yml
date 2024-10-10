@@ -1,0 +1,4 @@
+'administer 42videobricks':
+  title: Administer 42videobricks
+  description: Control the main settings pages and import videos from 42videobricks external service.
+  'restrict access': TRUE

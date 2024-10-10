@@ -1,0 +1,51 @@
+videobricks.main:
+  path: '/admin/content/videobricks'
+  defaults:
+    _title: '42videobricks'
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+  requirements:
+    _permission: 'administer 42videobricks'
+videobricks.config.main:
+  path: '/admin/config/videobricks'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: '42videobricks'
+  requirements:
+    _permission: 'administer 42videobricks'
+
+videobricks.api_settings_form:
+  path: '/admin/config/videobricks/settings'
+  defaults:
+    _form: '\Drupal\videobricks\Form\VideobricksSettingsForm'
+    _title: 'Api Settings'
+  requirements:
+    _permission: 'administer 42videobricks'
+
+videobricks.library:
+  path: '/admin/config/videobricks/library'
+  defaults:
+    _controller: '\Drupal\videobricks\Controller\VideobricksLibraryController::list'
+    _title: 'Library'
+  requirements:
+    _permission: 'administer 42videobricks'
+
+videobricks.add:
+  path: '/admin/config/videobricks/add'
+  defaults:
+    _form: '\Drupal\videobricks\Form\VideobricksAddForm'
+    _title: 'Add New'
+  requirements:
+    _permission: 'administer 42videobricks'
+
+videobricks.video_init:
+  path: '/admin/config/videobricks/init'
+  defaults:
+    _controller: '\Drupal\videobricks\Controller\VideobricksVideoController::init'
+  requirements:
+    _permission: 'administer 42videobricks'
+videobricks.video_finalize:
+  path: '/admin/config/videobricks/finalize'
+  defaults:
+    _controller: '\Drupal\videobricks\Controller\VideobricksVideoController::finalize'
+  requirements:
+    _permission: 'administer 42videobricks'

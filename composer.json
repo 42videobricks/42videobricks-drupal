@@ -1,0 +1,20 @@
+{
+  "name": "drupal/videobricks",
+  "description": "Offers an implementation of the 42videobricks API integration that uses Media for displaying video content",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/videobricks",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "42videobricks",
+      "homepage": "https://www.drupal.org/u/42videobricks"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/videobricks",
+    "source": "http://git.drupal.org/project/videobricks.git"
+  },
+  "require": {
+    "42videobricks/php-client": "^1.2.1"
+  }
+}

@@ -1,0 +1,6 @@
+name: 42videobricks
+type: module
+description: Integration with 42videoricks service.
+core_version_requirement: '^10'
+dependencies:
+  - drupal:media

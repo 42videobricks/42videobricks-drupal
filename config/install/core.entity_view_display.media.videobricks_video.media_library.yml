@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.videobricks_video.field_media_videobricks_media
+    - image.style.medium
+    - media.type.videobricks_video
+  module:
+    - image
+id: media.videobricks_video.media_library
+targetEntityType: media
+bundle: videobricks_video
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_videobricks_media: true
+  name: true
+  uid: true

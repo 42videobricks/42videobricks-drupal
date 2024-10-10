@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_videobricks_media
+    - media.type.videobricks_video
+  module:
+    - videobricks
+id: media.videobricks_video.field_media_videobricks_media
+field_name: field_media_videobricks_media
+entity_type: media
+bundle: videobricks_video
+label: Videobricks
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: videobricks

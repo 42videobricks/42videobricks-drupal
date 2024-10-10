@@ -1,0 +1,30 @@
+videobricks.main:
+  title: '42videorbricks'
+  route_name: videobricks.main
+  description: 'Videobricks Content main menu'
+  parent: system.admin_content
+
+videobricks.config.main:
+  title: '42videobricks'
+  route_name: videobricks.config.main
+  description: '42videobricks configuration'
+  parent: system.admin_config
+
+videobricks.api_settings_form:
+  title: 'API Settings'
+  route_name: videobricks.api_settings_form
+  description: 'Api settings for importing videos from 42videobricks'
+  parent: videobricks.config.main
+
+videobricks.library:
+  title: 'Library'
+  route_name: videobricks.library
+  description: 'Your videos library'
+  parent: videobricks.config.main
+
+videobricks.add:
+  title: 'Add New'
+  route_name: videobricks.add
+  description: 'Add new video'
+  parent: videobricks.config.main
+

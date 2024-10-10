@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - videobricks
+id: videobricks_video
+label: '42videobricks video'
+description: 'Video provided by 42videobricks external service'
+source: videobricks_media
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_videobricks_media
+field_map: {  }

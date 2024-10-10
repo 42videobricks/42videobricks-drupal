@@ -1,0 +1,18 @@
+drupal.videobricks.add:
+  version: VERSION
+  css:
+    component:
+      css/videobricks.add.css: {}
+  js:
+    js/videobricks.js: { }
+  dependencies:
+    - core/jquery
+drupal.videobricks.copy:
+  version: VERSION
+  css:
+    component:
+      css/videobricks.add.css: {}
+  js:
+    js/videobricks_copy.js: {}
+  dependencies:
+    - core/jquery
